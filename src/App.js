@@ -58,6 +58,8 @@ class App extends Component {
         <div className='row mt-5'>
           <div className='col-sm-2'></div>
           <div className='col-sm-4'>
+          {
+            this.state.quotes.length > 0 && // The && is used here instead of ? because it is only an if statement instead of if else (binary instead of ternary)
             <div className='card'>
               <div className='card-header'>Here's your quote!</div>
               <div className='card-body'>
@@ -72,15 +74,14 @@ class App extends Component {
                 }
               </div>
              </div>
+          }
           </div>
           <div className='col-sm-4'>
             {
-              this.state.quotes.length > 0 ?
+              this.state.quotes.length > 0 &&
               <RoboPic
                 src={ this.state.roboPic.imageUrl }
               />
-              :
-              null
             }
           </div>
           <div className='col-sm-2'></div>
