@@ -1,3 +1,8 @@
+This is a basic app that makes two api calls to generate a random famous quote and a picture of a robot! 
+
+Use npm start to start the server and check out the app!
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
